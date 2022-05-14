@@ -66,7 +66,7 @@ public class E_mess
 	static int menu_generation_status=0;
 	static String current_time;
 	static int cus;
-
+	static int stat = -1;
 
 	
     public static void main(String args[])
