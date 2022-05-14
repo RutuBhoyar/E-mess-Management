@@ -300,7 +300,7 @@ class table1 extends E_mess
     
     int final_hr = 0;
     int final_min = 0;
-    int res = time_min + 1;
+    int res = time_min + 30;
     if(res>=60)
     {
         int rem = res%60;
