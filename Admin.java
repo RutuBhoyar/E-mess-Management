@@ -278,7 +278,7 @@ class table1 extends E_mess
 
     void update_table(int cus)
     {
-
+	stat = 0;
     for(int i=0;i<20;i++)
         {
             status[i] = new table1();
@@ -300,7 +300,7 @@ class table1 extends E_mess
     
     int final_hr = 0;
     int final_min = 0;
-    int res = time_min + 30;
+    int res = time_min + 1;
     if(res>=60)
     {
         int rem = res%60;
