@@ -488,30 +488,44 @@ public class Customer extends E_mess
 		//System.out.println(time_min);
 	
 		String current_time1 = String.valueOf(time_hr) +  " : " + String.valueOf(time_min);
-		System.out.println(current_time1);
-		System.out.println(final_time);
-		if(current_time1.equals(final_time))
+		
+		if(stat == -1)
+		{
+			System.out.println("_________________________________________________");
+			System.out.println("The status is not generated yet !!!");
+			System.out.println("_________________________________________________");
+
+		}
+		else if(current_time1.equals(final_time))
 		{
 			for(int i=0;i<cus;i++)
 			{
 				status[i].f = 0;
 			}
-			
-		}
-		System.out.println();
-		System.out.println("Number of tables available : ");
 
-		for(int i=0;i<20;i++)
+			dis();
+		}
+		else
 		{
-			if(status[i].f == 0)
-			{
-				System.out.println("Table number " + status[i].number );
-			}
+			dis();
 		}
-
 		System.out.println();
+
 
 		
+	}
+
+	void dis()
+	{
+		System.out.println();
+			System.out.println("Number of tables available : ");
+			for(int i=0;i<20;i++)
+			{
+				if(status[i].f == 0)
+				{
+					System.out.println("Table number " + status[i].number );
+				}
+			}
 	}
 	
 }
